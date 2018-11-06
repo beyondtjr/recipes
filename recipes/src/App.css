@@ -5,34 +5,99 @@
 .Header {
   background-image: url(http://siteassets.pagecloud.com/olmex1/images/mesa_olmex-ID-4808f2ab-4975-4a59-8875-89868e57889d.jpg?nocache=db290685-4069-4314-e965-048c46cb94b7);
   background-size: cover;
-  text-decoration: line-through;
   background-color: lightblue;
   height: 200px;
   text-align: center;
   font-size: 35px;
 }
+.HeaderText span {
+  background-color: RGBA(255, 255, 255, .5);
+  font-family: fantasy;
+  font-size: 50px;
+}
 
 .Footer{
   background-color: White;
-  height: 50px;
+  height: 20px;
   text-align: center;
   font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
 }
 
 .Recipe {
-  background-color: lightblue;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.RecipeNames {
+  font-size: 25px;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .RecipeList {
   background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/02/High-Quality-White-Wood-Texture.jpg);
   background-size: contain;
   border: 2px solid Black;
-  display: table-cell;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: auto;
   margin: 34px 34px;
-  width: 300px;
-  height: 250px;
+  min-width: 250px;
+  min-height: 250px;
+
+}
+
+.ingredientsList {
+  text-align:left;
+  margin: auto;
+}
+
+
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 2px solid black;
+  margin: auto;
+  font-family: fantasy;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.hoverNav a:hover {
+  background-color: lightblue;
+  font-style: italic;
+}
+
+.about {
+  font-size: 15px;
+  margin: auto;
+  text-align: center;
+  min-width: 20%;
+  max-width: 90%;
+}
+
+.Paragraphs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Body {
+  min-height: 475px;
+}
+
+.HomeLanding {
+  font-size: 150px;
+}
+
+.Coco {
+  max-height: 300px;
+  max-width: 150px;
 }

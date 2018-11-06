@@ -1,58 +1,45 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+
 import './App.css';
-import Recipe from './Recipe'
-import Header from './Header'
-import Footer from './Footer'
+import Recipes from './pages/Recipes'
+import Home from './pages/Home'
+import About from './pages/About'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Navbar from './components/Navbar'
+
+
 
 class App extends Component {
   constructor(props){
     super(props)
-    this.state = {
-      recipes: [
-        {
-            id: 1,
-            name: 'Adobada Taco',
-            ingredients: ['Adobada ', 'Tortilla ', 'Cilantro ', 'Guacamole ', 'Lime ', 'Chopped Onions ', 'Pico ']
 
-        },
-        {
-             id: 2,
-             name: 'Carne Asada Fries',
-             ingredients: ['French Fries', 'Carne Asada', 'Mexican Cheese', 'Sour Cream', 'Guacamole']
-        },
-        {
-             id: 3,
-             name: 'Magic Burrito',
-             ingredients: ['Magic', 'Tortilla']
-        }
-      ]
-    }
   }
 
   render() {
-    let recipesList = this.state.recipes.map((recipe, id) => {
 
-      let styles = {
-        backgroundImage: 'url(' + `${recipe.image}` + ')'
-      }
-      return (
-        <div id={recipe.id} className="RecipeList" >
-          <ul> {recipe.name}:
-            {recipe.ingredients.map(el => <li>{el}</li>)}
-          </ul>
-        </div>
-      )
-    })
     return (
       <div>
-        <div className="Header"> <Header /> </div>
-        <h1>
-
-        </h1>
-        <div className="Recipe"><Recipe recipes={this.recipesList}/>
-          <div>{recipesList}</div>
+        <div className="Header">
+          <Header />
         </div>
-          <div className="Footer"> <Footer /> </div>
+          <div> <Navbar /> </div>
+
+        <Router>
+          <Switch>
+            <div className="Body">
+              <Route exact path="/about" component={About} />
+              <Route exact path="/home" component={Home} />
+              <Route exact path="/recipes" component={Recipes} />
+            </div>
+          </Switch>
+        </Router>
+
+
+        <div className="Footer">
+        </div>
+        <Footer />
       </div>
     );
 
