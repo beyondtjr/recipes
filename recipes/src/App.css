@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+.Header {
+  background-image: url(http://siteassets.pagecloud.com/olmex1/images/mesa_olmex-ID-4808f2ab-4975-4a59-8875-89868e57889d.jpg?nocache=db290685-4069-4314-e965-048c46cb94b7);
+  background-size: cover;
+  text-decoration: line-through;
+  background-color: lightblue;
+  height: 200px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.Footer{
+  background-color: White;
+  height: 50px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.Recipe {
+  background-color: lightblue;
+}
+
+.RecipeList {
+  background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/02/High-Quality-White-Wood-Texture.jpg);
+  background-size: contain;
+  border: 2px solid Black;
+  display: table-cell;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin: 34px 34px;
+  width: 300px;
+  height: 250px;
+}
