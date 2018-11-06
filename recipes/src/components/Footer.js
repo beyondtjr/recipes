@@ -4,8 +4,8 @@ class Footer extends Component {
 
   render() {
     return (
-      <div>
-        <center> Yum </center>
+      <div style={{fontSize: 15}}>
+        <center> M, R, & C Recipes for young adults with no cooking skills© </center>
       </div>
     );
   }

@@ -4,8 +4,8 @@ class Header extends Component {
 
   render() {
     return (
-      <div id="name">
-        <center>Chris's Family Recipes</center>
+      <div className="HeaderText">
+        <span>Casa de Recipe</span>
       </div>
     );
   }
